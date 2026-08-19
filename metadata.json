@@ -1,0 +1,6 @@
+{
+  "name": "AI Studio Workspace",
+  "description": "An avant-garde fashion-coded studio workspace featuring editorial prompt engineering, runway forecasting, tech-pack drafting, multimodal lookbook curation, and live scratchpad powered by Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

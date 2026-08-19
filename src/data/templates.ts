@@ -1,0 +1,58 @@
+import { PromptTemplate } from '../types';
+
+export const DEFAULT_PROMPT_TEMPLATES: PromptTemplate[] = [
+  {
+    id: 'runway-creative-direction',
+    title: 'Runway Collection & Creative Direction',
+    category: 'Editorial & Runway',
+    description: 'Architect complete seasonal collection themes, silhouettes, fabrications, color narratives, and runway staging.',
+    prompt: 'Develop an avant-garde Creative Direction Brief for an upcoming [Season, e.g. Autumn/Winter 2026/27] Runway Collection titled "[Collection Title / Aesthetic, e.g. Brutalist Tailoring & Organic Draping]".\n\nStructure the brief as follows:\n1. Collection Narrative & Philosophical Concept\n2. Key Silhouettes & Architectural Proportion Study\n3. Color Story (specify 5 core tones with evocative names and Hex codes)\n4. Fabrications & Material Innovation (drapes, structured wools, technical organzas)\n5. Runway Set Design, Lighting & Soundscape Atmosphere\n6. 3 Hero Looks (detailed head-to-toe styling breakdowns)',
+    systemInstruction: 'You are an acclaimed Creative Director and High-Fashion Curator for a prestigious Parisian Haute Couture Maison. Deliver evocative, razor-sharp editorial prose paired with precise technical terminology (bias-cut, dart manipulation, sculptural volume, hand-loomed jacquards).',
+    tags: ['Creative Direction', 'Runway', 'Haute Couture', 'Color Story'],
+  },
+  {
+    id: 'garment-tech-pack',
+    title: 'Garment Tech Pack & Technical Spec',
+    category: 'Fashion Tech & Production',
+    description: 'Draft comprehensive technical specification sheets with Bill of Materials, stitch types, and grade tables.',
+    prompt: 'Draft an industry-standard Technical Specification Sheet (Tech Pack) for a [Garment, e.g. Oversized Structured Double-Breasted Trench Coat with Asymmetrical Lapel].\n\nInclude:\n1. Garment Description & Flat Sketch Callouts\n2. Bill of Materials (BOM) Table (Main fabric, lining, fusing, buttons, hardware, thread)\n3. Construction Specifications (Stitch type e.g., ISO 401, seam allowances, bar-tacks)\n4. Point of Measurement (POM) Spec Sheet (Chest width, shoulder slope, sleeve inseam, sweep with tolerances)\n5. Finishing, Pressing & Care Label Instructions',
+    systemInstruction: 'You are a Senior Technical Designer and Production Director with 20+ years in luxury ready-to-wear ateliers. Provide meticulous, factory-ready specifications formatted with structured Markdown tables.',
+    tags: ['Tech Pack', 'Production', 'BOM', 'Garment Specs'],
+  },
+  {
+    id: 'editorial-lookbook-copy',
+    title: 'Editorial Lookbook & Campaign Narrative',
+    category: 'Editorial & Runway',
+    description: 'Write poetic, high-impact editorial lookbook commentary, campaign press releases, and show notes.',
+    prompt: 'Write an evocative Fashion Editorial Lookbook Feature and Show Notes for a capsule collection exploring [Theme, e.g. Nomadic Futurism & Raw Silk Heritage].\n\nDeliver:\n- Haute Editorial Title & 3-line Manifesto\n- Collection Show Notes for Front Row Guests (poetic and culturally grounded)\n- Look-by-Look Descriptions for 4 key ensembles (highlighting movement, drape, and texture)\n- Campaign Tagline and Social Teaser Copy for Vogue / Dazed / BoF',
+    systemInstruction: 'You are the Chief Fashion Critic and Editorial Editor for an elite international fashion publication (Vogue Runway, Purple Magazine, AnOther). Write with lyrical precision, intellectual depth, and uncompromising aesthetic clarity.',
+    tags: ['Lookbook', 'Editorial', 'Copywriting', 'Press Release'],
+  },
+  {
+    id: 'sustainable-textiles-audit',
+    title: 'Sustainable Material & Lifecycle Audit',
+    category: 'Material Innovation',
+    description: 'Analyze textile ecology, circular design feasibility, bio-fabrics, and low-impact dyeing methods.',
+    prompt: 'Conduct a Sustainable Textile & Circular Lifecycle Audit for a luxury ready-to-wear line transitioning to regenerative practices for [Garment Category / Material Focus, e.g. Zero-Waste Knitwear & Plant-Dyed Linens].\n\nAnalyze:\n1. Raw Material Sourcing & Environmental Impact Scorecard\n2. Low-Impact Dye Chemistry (Natural mordants, waterless dye tech, closed-loop systems)\n3. Durability vs. Biodegradability Trade-off Analysis\n4. Circularity Protocol: Repairability, Mono-material purity, End-of-life recycling\n5. Recommended Certifications (GOTS, OEKO-TEX, Cradle to Cradle Gold)',
+    systemInstruction: 'You are a Sustainable Materials Scientist and Luxury Sustainability Strategist. Provide rigorous, data-backed material evaluations that preserve high-end tactile luxury while eliminating environmental toxicity.',
+    tags: ['Sustainability', 'Textiles', 'Circular Fashion', 'Eco-Luxury'],
+  },
+  {
+    id: 'virtual-tryon-fashiontech-arch',
+    title: 'Fashion-Tech 3D Try-On & Digital Architecture',
+    category: 'Fashion Tech & Production',
+    description: 'Architect real-time 3D cloth simulation, avatar sizing algorithms, and luxury e-commerce engines.',
+    prompt: 'Design the end-to-end technical system architecture for an AI-Powered Virtual Fitting Room & 3D Digital Atelier Web Platform. Detail:\n1. 3D Cloth Physics & glTF/USDZ asset pipeline\n2. Computer Vision Body Scanning & Measurement Precision Algorithms\n3. Microservices Architecture (Frontend, Generative AI inference, Real-time 3D viewport)\n4. Database Schema for User Garment Wardrobe & Sizing Profiles (TypeScript interfaces)\n5. Latency & WebGL / WebGPU Rendering Optimization Strategies',
+    systemInstruction: 'You are a Principal Fashion-Tech Software Architect specializing in WebGL, 3D clothing simulation, and AI neural rendering. Provide rigorous system blueprints and TypeScript contracts.',
+    tags: ['Fashion Tech', '3D Cloth', 'TypeScript', 'System Architecture'],
+  },
+  {
+    id: 'styling-silhouette-lab',
+    title: 'Silhouette Balancing & Styling Theory',
+    category: 'Styling & Wardrobe',
+    description: 'Formulate bespoke silhouette pairings, color contrast dynamics, and high-low texture friction.',
+    prompt: 'Create an Advanced Styling Guide analyzing the interplay of [Silhouette Challenge, e.g. Voluminous Cocoon Coat over Tailored Micro-Pleated Trousers].\n\nBreak down:\n1. Geometric Proportions & Center-of-Gravity Visual Balance\n2. Texture Friction Theory (Mixing matte, sheen, sheer, and coarse fabrics)\n3. Monochromatic vs. Poly-Harmonic Color Pairing Matrix\n4. Footwear & Architectural Hardware Anchors\n5. Day-to-Night Transformation Protocol',
+    systemInstruction: 'You are a Celebrity Stylist and Fashion Theorist who treats dressing as a sculptural art form. Deliver actionable, visually articulate styling rules.',
+    tags: ['Styling', 'Silhouette', 'Proportions', 'Wardrobe Theory'],
+  },
+];
