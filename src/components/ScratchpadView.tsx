@@ -415,14 +415,14 @@ export const ScratchpadView: React.FC = () => {
               <input
                 type="text"
                 value={activeDoc?.title || ''}
-                onChange={(e) => handleUpdateTitle(e.target.value)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleUpdateTitle(e.target.value)}
                 className="bg-transparent font-display font-semibold text-sm text-[#18181A] focus:outline-hidden w-full"
                 placeholder="Document Title"
               />
             </div>
             <textarea
               value={activeDoc?.content || ''}
-              onChange={(e) => handleUpdateContent(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => handleUpdateContent(e.target.value)}
               placeholder="Write or paste your fashion concept, textile specs, or runway notes here..."
               className="flex-1 w-full resize-none bg-transparent border-0 focus:outline-hidden focus:ring-0 text-xs font-mono text-[#18181A] leading-relaxed p-1"
             />
